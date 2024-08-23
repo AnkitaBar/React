@@ -1,0 +1,14 @@
+.text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    align-items: center;
+    margin-left: 10rem;
+}
