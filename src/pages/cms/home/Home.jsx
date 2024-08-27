@@ -76,6 +76,7 @@ export default function Home() {
         speed: 500,
         slidesToShow: 2,
         slidesToScroll: 1,
+        
       };
 
   return (
@@ -122,6 +123,8 @@ export default function Home() {
         ))}
         </Grid>
 
+
+
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 6, sm: 6, md: 12 }} style={{marginTop:'3rem'}} className='text' >
          <Grid item xs={6}  >
          <Typography variant="h6" color="text.primary" style={{marginLeft:'3rem'}} >
@@ -145,7 +148,7 @@ export default function Home() {
             </Grid>
          <Grid item xs={6}  >
           
-         <Typography variant="h6" color="text.primary" style={{marginRight:'3rem'}} >
+         <Typography variant="h6" color="text.primary" style={{marginRight:'5rem'}} >
             Lizards are a widespread group of squamate reptiles, with over 6,000
             species, ranging across all continents except Antarctica
             Lizards are a widespread group of squamate reptiles, with over 6,000
@@ -157,6 +160,7 @@ export default function Home() {
 
             
         </Grid>
+        
         
         <Container>
         <Slider {...settings}>

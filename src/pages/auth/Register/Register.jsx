@@ -56,11 +56,11 @@ export default function SignUp() {
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Sign in
+            Sign up
           </Typography>
           <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
             <Grid container spacing={2}>
-              {/* <Grid item xs={12} sm={6}>
+              <Grid item xs={12} sm={6}>
                 <TextField
                   autoComplete="given-name"
                   name="firstName"
@@ -70,8 +70,8 @@ export default function SignUp() {
                   label="First Name"
                   autoFocus
                 />
-              </Grid> */}
-              {/* <Grid item xs={12} sm={6}>
+              </Grid>
+              <Grid item xs={12} sm={6}>
                 <TextField
                   required
                   fullWidth
@@ -80,7 +80,7 @@ export default function SignUp() {
                   name="lastName"
                   autoComplete="family-name"
                 />
-              </Grid> */}
+              </Grid>
               <Grid item xs={12}>
                 <TextField
                   required
@@ -103,9 +103,20 @@ export default function SignUp() {
                 />
               </Grid>
               <Grid item xs={12}>
+                <TextField
+                  required
+                  fullWidth
+                  name="password"
+                  label=" Confirm Password"
+                  type="password"
+                  id="password"
+                  autoComplete="new-password"
+                />
+              </Grid>
+              <Grid item xs={12}>
                 <FormControlLabel
                   control={<Checkbox value="allowExtraEmails" color="primary" />}
-                  label="Remember me"
+                  label="I accept the terms and conditions"
                 />
               </Grid>
             </Grid>
@@ -115,19 +126,12 @@ export default function SignUp() {
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
             >
-              Sign IN
+              Sign Up
             </Button>
-            <Grid container justifyContent="flex-start">
-              <Grid item>
-                <Link href="#" variant="body2">
-                  Forgot Password ?
-                </Link>
-              </Grid>
-            </Grid>
             <Grid container justifyContent="flex-end">
               <Grid item>
                 <Link href="#" variant="body2">
-                  No account ? Sign up
+                  Already have an account? Sign in
                 </Link>
               </Grid>
             </Grid>
