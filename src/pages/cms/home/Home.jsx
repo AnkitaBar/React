@@ -3,18 +3,20 @@ import "./home.css"
 
 // import {  Toolbar, Container, Link, IconButton, Box } from '@mui/material';
 // import { Facebook, Twitter, Instagram, LinkedIn } from '@mui/icons-material';
-
+import Header from './Header.jsx';
 import Team from "./Team.jsx";
 import Footer from "./Footer.jsx";
 
 import Carousel from 'react-material-ui-carousel'
-import image1 from "../../img/dragon-ball-landscape-m9vtdvj8wixkovhi.jpg"
-import image2 from "../../img/wp3062369.webp"
-import image3 from "../../img/wp3062302.webp"
+import image from "../../img/chess-2.jpg" 
+import image1 from "../../img/windmills.jpg"
+import image2 from "../../img/card.avif"
+import image3 from "../../img/apple.jpg"
 import image4 from "../../img/u.svg"
 import image5 from "../../img/accelerate.svg"
 import image6 from "../../img/mail.svg"
 import image7 from "../../img/notify.svg"
+import image8 from "../../img/nature4.jpg"
 
 
 import Card from '@mui/material/Card';
@@ -40,6 +42,11 @@ export default function Home() {
             name: "Random Name #2",
             description: "Hello World!",
             image:image3
+        },
+        {
+            name: "Random Name #2",
+            description: "Hello World!",
+            image:image
         }
     ]
 
@@ -82,12 +89,14 @@ export default function Home() {
   return (
    <>
 
+    <Header/>
+
    <Carousel>
            {items.map((item)=>{
             return(
                 <>
                 
-                <img src={item.image} height="100%" width="100%"/>
+                <img src={item.image} height="50%" width="100%" loading='lazy'/>
                 
                 
                 </>
@@ -103,19 +112,17 @@ export default function Home() {
       <CardActionArea>
         <CardMedia
           component="img"
-          sx={{objectFit:'contain'}}
+          sx={{objectFit:'fit'}}
           height="140"
-          image={image2}
+          image={image8}
           alt="green iguana"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            Nature
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
+          Nature is the physical world and everything that exists in it that is not created by humans. This includes the animals, plants, events, processes, and products of the Earth, such as the weather, mountains, reproduction, and growth.          </Typography>
         </CardContent>
       </CardActionArea>
     </Card>
@@ -128,33 +135,23 @@ export default function Home() {
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 6, sm: 6, md: 12 }} style={{marginTop:'3rem'}} className='text' >
          <Grid item xs={6}  >
          <Typography variant="h6" color="text.primary" style={{marginLeft:'3rem'}} >
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+         Nature is the physical world and everything that exists in it that is not created by humans. This includes the animals, plants, events, processes, and products of the Earth, such as the weather, mountains, reproduction, and growth.
           </Typography>
             </Grid>
 
             <Grid item xs={6}  >
-                <img src={image3} height="300" />
+                <img src={image2} height="300" />
             </Grid>
         </Grid>
 
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 6, sm: 6, md: 12 }} style={{marginTop:'3rem'}} className='text' >
         <Grid item xs={6}  >
-                <img src={image3} height="300" />
+                <img src={image2} height="300" />
             </Grid>
          <Grid item xs={6}  >
           
          <Typography variant="h6" color="text.primary" style={{marginRight:'5rem'}} >
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+         Nature is the physical world and everything that exists in it that is not created by humans. This includes the animals, plants, events, processes, and products of the Earth, such as the weather, mountains, reproduction, and growth.
           </Typography>
             </Grid>
 

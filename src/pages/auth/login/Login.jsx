@@ -12,6 +12,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Header from '../../cms/home/Header';
 
 function Copyright(props) {
   return (
@@ -41,8 +42,17 @@ export default function SignUp() {
   };
 
   return (
+    <>
+    <Header/>
     <ThemeProvider theme={defaultTheme}>
-      <Container component="main" maxWidth="xs">
+     <div style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '100vh',
+      backgroundColor: '#f5f5f5', // Optional: to give a background color
+    }}>
+      <Container component="main" maxWidth="xs" style={{border:'1px solid'}}>
         <CssBaseline />
         <Box
           sx={{
@@ -126,7 +136,7 @@ export default function SignUp() {
             </Grid>
             <Grid container justifyContent="flex-end">
               <Grid item>
-                <Link href="#" variant="body2">
+                <Link href="/register" variant="body2">
                   No account ? Sign up
                 </Link>
               </Grid>
@@ -135,6 +145,8 @@ export default function SignUp() {
         </Box>
         {/* <Copyright sx={{ mt: 5 }} /> */}
       </Container>
+      </div>
     </ThemeProvider>
+    </>
   );
 }

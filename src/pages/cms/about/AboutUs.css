@@ -1,0 +1,50 @@
+.about-container {
+    background-color: #333;
+    color: #ccc;
+    padding: 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .about-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .about-subtitle {
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
+  
+  .about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .about-item {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .about-item h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .about-item p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .icon {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: green;
+  }
+  
